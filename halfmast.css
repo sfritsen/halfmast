@@ -1,0 +1,143 @@
+@import "halfmast-reset.css";
+
+:root {
+    --hm-gutter-x: 1.5rem;
+    --hm-gutter-y: 0;
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    width: 100%;
+    padding-right: calc(var(--hm-gutter-x) * 0.5);
+    padding-left: calc(var(--hm-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container,
+    .container-sm {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1320px;
+    }
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--hm-gutter-y));
+    margin-right: calc(-0.5 * var(--hm-gutter-x));
+    margin-left: calc(-0.5 * var(--hm-gutter-x));
+}
+.row > * {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--hm-gutter-x) * 0.5);
+    padding-left: calc(var(--hm-gutter-x) * 0.5);
+    margin-top: var(--hm-gutter-y);
+}
+.col {
+    flex: 1 0 0%;
+}
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+}
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+}
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.col-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+.col-9 {
+    flex: 0 0 auto;
+    width: 75%;
+}
+.col-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+.col-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+}
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+/**
+CENTER VERTICAL AND HORIZONTAL
+- Use as wrapper
+- If using to align grid, place outside of container
+**/
+.vh-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
