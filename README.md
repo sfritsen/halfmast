@@ -1,4 +1,4 @@
-# halfmast
+# Halfmast
 Base level CSS grid layout system ripped from Bootstrap.
 Also includes a compiled reset.
 
