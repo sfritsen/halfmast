@@ -106,8 +106,8 @@ textarea {
 
 /* Correct the odd appearance in Chrome and Safari */
 [type="search"] {
-	-webkit-appearance: textfield; /* 1 */
-	outline-offset: -2px; /* 2 */
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
 }
 
 /* Sets a default monospace */
