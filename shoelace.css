@@ -1,8 +1,8 @@
-@import "halfmast-reset.css";
+@import "shoelace-reset.css";
 
 :root {
-    --hm-gutter-x: 1.5rem;
-    --hm-gutter-y: 0;
+    --sl-gutter-x: 1.5rem;
+    --sl-gutter-y: 0;
 }
 .container,
 .container-fluid,
@@ -12,8 +12,8 @@
 .container-xl,
 .container-xxl {
     width: 100%;
-    padding-right: calc(var(--hm-gutter-x) * 0.5);
-    padding-left: calc(var(--hm-gutter-x) * 0.5);
+    padding-right: calc(var(--sl-gutter-x) * 0.5);
+    padding-left: calc(var(--sl-gutter-x) * 0.5);
     margin-right: auto;
     margin-left: auto;
 }
@@ -60,18 +60,18 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1 * var(--hm-gutter-y));
-    margin-right: calc(-0.5 * var(--hm-gutter-x));
-    margin-left: calc(-0.5 * var(--hm-gutter-x));
+    margin-top: calc(-1 * var(--sl-gutter-y));
+    margin-right: calc(-0.5 * var(--sl-gutter-x));
+    margin-left: calc(-0.5 * var(--sl-gutter-x));
 }
 .row > * {
     box-sizing: border-box;
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right: calc(var(--hm-gutter-x) * 0.5);
-    padding-left: calc(var(--hm-gutter-x) * 0.5);
-    margin-top: var(--hm-gutter-y);
+    padding-right: calc(var(--sl-gutter-x) * 0.5);
+    padding-left: calc(var(--sl-gutter-x) * 0.5);
+    margin-top: var(--sl-gutter-y);
 }
 .col {
     flex: 1 0 0%;
